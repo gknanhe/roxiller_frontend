@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.description-cell {
+  /* Prevent text from wrapping */
+  white-space: nowrap;
+  /* Hide overflowed content */
+  overflow: hidden;
+  /* Show ellipsis (...) for overflowed content */
+  text-overflow: clip;
+}
+
+.table {
+  /* width: 100%; */
+  /* min-width: 1000px; */
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Display ellipsis for overflowed text */
+  max-width: 100px;
+}
