@@ -10,7 +10,7 @@ const useGetTabledata = () => {
     const getTableData = async () => {
       try {
         const res = await fetch(
-          `http://localhost:8000/api/transactions/stat-trasactions?month=${selectedMonth}&page=${selectedPage}`
+          `https://roxiller-backend-snya.onrender.com/api/transactions/stat-trasactions?month=${selectedMonth}&page=${selectedPage}`
         );
 
         if (!res.ok) {

@@ -12,7 +12,7 @@ const useNext = () => {
       try {
         console.log("inside next");
         const res = await fetch(
-          `http://localhost:8000/api/transactions/month?month=${selectedMonth}&page=${selectedPage}`
+          `https://roxiller-backend-snya.onrender.com/api/transactions/month?month=${selectedMonth}&page=${selectedPage}`
         );
 
         if (!res.ok) {
